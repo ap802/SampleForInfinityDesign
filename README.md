@@ -1,2 +1,9 @@
 # SampleForInfinityDesign
-One of my ASP.NET projects 
+
+Pushed as a sample of my work for Infinity Design review.
+
+#MVC
+#Web.API
+#EF6
+
+*** Alexei Pavlov *** 
