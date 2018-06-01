@@ -1,0 +1,14 @@
+﻿@using MySMA.Models
+@model MySMA.Models.MonthYearQuestion
+
+@{
+    var questionDefinition = ViewBag.questionDefinition as MonthYearQuestionDefinition;
+}
+
+@Html.DisplayNameFor(model => model.MonthValue)
+@Html.DropDownListFor(m => m.MonthValue, new SelectList(questionDefinition.MonthList, "AnswerId", "PromptText"), new { data_val = false, @class = "form-control" })
+<br>
+@Html.DisplayNameFor(model => model.YearValue)
+@Html.DropDownListFor(m => m.YearValue, new SelectList(questionDefinition.YearList), new { data_val = false, @class = "form-control" })
+
+

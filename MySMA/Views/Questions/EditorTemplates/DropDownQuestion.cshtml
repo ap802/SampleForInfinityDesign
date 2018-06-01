@@ -1,0 +1,10 @@
+﻿@using MySMA.Models
+@model MySMA.Models.DropDownQuestion
+    @{
+        var questionDefinition = ViewBag.questionDefinition as DropDownQuestionDefinition;
+    }
+    <div class="col-md-10">
+        @Html.DropDownListFor(m => m.SelectedAnswer, new SelectList(questionDefinition.PossibleAnswers, "AnswerId", "PromptText"), new {data_val = false, @class = "form-control"})
+    </div>
+
+    @Html.ValidationMessageFor(model => model.SelectedAnswer, "", new { @class = "text-danger" })

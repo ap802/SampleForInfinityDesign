@@ -1,0 +1,15 @@
+﻿@model MySMA.Models.Questionnaire
+
+@{
+    ViewBag.Title = "Questionnaire Details";
+}
+
+<h2>Questionnaire Details</h2>
+
+<div>
+    @Html.Partial("_DetailsOrDelete", Model)
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

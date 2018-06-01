@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="QuestionDefinition_PromptText_BorrowerAge" xml:space="preserve">
+    <value>Please enter the borrower's age</value>
+    <comment>Dave's original</comment>
+  </data>
+  <data name="QuestionDefinition_PromptText_SpouseAge" xml:space="preserve">
+    <value>Please enter the borrower's spouse's age</value>
+    <comment>Dave's original</comment>
+  </data>
+  <data name="QuestionDefinition_PromptText_ChildAge" xml:space="preserve">
+    <value>Please enter the borrower's child's age</value>
+    <comment>Dave's original</comment>
+  </data>
+  <data name="QuestionDefinition_PromptText_BorrowerDateOfBirth" xml:space="preserve">
+    <value>Enter the borrower's date of birth</value>
+    <comment>Dave's original</comment>
+  </data>
+  <data name="QuestionDefinition_PromptText_MaritalStatus" xml:space="preserve">
+    <value>What is your marital status?</value>
+    <comment>Dave's original</comment>
+  </data>
+  <data name="QuestionDefinition_PromptText_PropertyTypes" xml:space="preserve">
+    <value>Select the types of property you are interested in buying</value>
+    <comment>Dave's original</comment>
+  </data>
+  <data name="AnswerDefinition_PromptText_Married" xml:space="preserve">
+    <value>Married</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_Separated" xml:space="preserve">
+    <value>Separated</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_UnMarried" xml:space="preserve">
+    <value>Unmarried</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_CurrentLienHolder" xml:space="preserve">
+    <value>Who is the current lien holder?</value>
+    <comment>text box</comment>
+  </data>
+  <data name="QuestionDefinition_PromptText_GraduateFromCollege" xml:space="preserve">
+    <value>Did you graduate from college in the past 2 years?</value>
+    <comment>Yes/No</comment>
+  </data>
+  <data name="AnswerDefinition_PromptText_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DependencyExistance" xml:space="preserve">
+    <value>Do you have any dependents?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_OwnOrRent" xml:space="preserve">
+    <value>Do you own or rent?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_TimeframeForPurchase" xml:space="preserve">
+    <value>What is the timeframe for your purchase?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_CurrentRealEstateAgent" xml:space="preserve">
+    <value>Are you currently working with a real estate agent?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_IntentionForTheNewProperty" xml:space="preserve">
+    <value>What is your intention for the new property?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_TermsApplyingFor" xml:space="preserve">
+    <value>What term are you thinking of applying for?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_CreditRating" xml:space="preserve">
+    <value>How would you rate your credit?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_AuthorizeCreditReport" xml:space="preserve">
+    <value>Do you provide authorization for us to pull your credit report?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_VeteranLoan" xml:space="preserve">
+    <value>Are you eligible for a Veteran Loan?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_TitleHolding" xml:space="preserve">
+    <value>Manner in which Title will be held</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_EscrowTaxesInTheLoan" xml:space="preserve">
+    <value>Do you want to escrow taxes in the loan?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_EscrowHazardInsuranceInLoan" xml:space="preserve">
+    <value>Do you want to escrow hazard (homeowners) insurance in the loan?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_OverdraftFeesOnBankStatements" xml:space="preserve">
+    <value>Do you have any overdraft fees on any of your bank statements?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_RetirementAccountsOr401Ks" xml:space="preserve">
+    <value>Do you have any retirement accounts and/or 401Ks?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_OwnPropertiesOrLand" xml:space="preserve">
+    <value>Do you own any properties or land?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_RecentlySoldProperties" xml:space="preserve">
+    <value>Have you sold any properties since you last filed your most recent tax return?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_SelfEmployed" xml:space="preserve">
+    <value>Are you Self Employed?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_EmploymentGaps" xml:space="preserve">
+    <value>Did you have any gaps in employment over the past 2 years greater than 30 days?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_ChildSupport" xml:space="preserve">
+    <value>Are you required to pay child support?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_AlimonyObligation" xml:space="preserve">
+    <value>Are you obligated to pay alimony?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_RecentDebt" xml:space="preserve">
+    <value>Have you taken on any recent debt?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_BackTaxesFromAnyPreviousYears" xml:space="preserve">
+    <value>Do you owe any back taxes from any previous years?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_UseOfHomeForBusiness" xml:space="preserve">
+    <value>Do you claim any business use of home on your tax return?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_UnreimbursedEmployeeExpenses" xml:space="preserve">
+    <value>Do you claim any unreimbursed employee expenses on your tax return?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_OutstandingJudgements" xml:space="preserve">
+    <value>Outstanding Judgements?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DeclaredBankrupt" xml:space="preserve">
+    <value>Have you been declared bankrupt in the past 7 years?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_PropertyForeclosed" xml:space="preserve">
+    <value>Have you had any property foreclosed on given title or deed in lieu thereof in the last 7 years?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_PartyToALawsuit" xml:space="preserve">
+    <value>Are you a party to a lawsuit?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_ObligatedOnAnyLoan" xml:space="preserve">
+    <value>Have you been obligated on any loan resulted in foreclosure, transfer of title in lieu of foreclosure, or judgement?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_UsCitizen" xml:space="preserve">
+    <value>Are you a US citizen?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_CurrentlyPartyToALawsuit" xml:space="preserve">
+    <value>Are you currently party to a lawsuit?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_StatusOfLoanDelinquency" xml:space="preserve">
+    <value>Are you presently delinquent or in default on any federal debt or any other loan, mortgage, financial obligation bond, or loan guarantee?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_CoMakerOrEndorser" xml:space="preserve">
+    <value>Are you a co-maker or endorser on a note?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_ShortSale" xml:space="preserve">
+    <value>Have you sold a home for less than you owed, that resulted in a short sale transaction?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_OwnershipInterestInAProperty" xml:space="preserve">
+    <value>Have you had ownership interest in a property in the past 3 years?</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Own" xml:space="preserve">
+    <value>Own</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Rent" xml:space="preserve">
+    <value>Rent</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_CurrentlyUnderContract" xml:space="preserve">
+    <value>Currently under contract</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_OfferPendingAHouse" xml:space="preserve">
+    <value>Offer Pending/found a house</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_PlanOnPurchasingAProperty" xml:space="preserve">
+    <value>Plan on purchasing a property in the next 2-4 months</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_ExploringOptions" xml:space="preserve">
+    <value>Exploring options</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_MoveIntoInUponClosing" xml:space="preserve">
+    <value>Move into in upon closing</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_MoveInWithin60Days" xml:space="preserve">
+    <value>Move in within 60 days</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_MoveInAfter60Days" xml:space="preserve">
+    <value>Move in after 60 days</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_UseItAsVacationHome" xml:space="preserve">
+    <value>Use it as a vacation (second) home</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_WillBeAnInvestmentProperty" xml:space="preserve">
+    <value>This purchase will be an investment/rental property</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_10YearFixed" xml:space="preserve">
+    <value>10 year fixed</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_15YearFixed" xml:space="preserve">
+    <value>15 year fixed</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_20YearFixed" xml:space="preserve">
+    <value>20 year fixed</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_25YearFixed" xml:space="preserve">
+    <value>25 year fixed</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_30YearFixed" xml:space="preserve">
+    <value>30 year fixed</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_AdjustableRateMortgage" xml:space="preserve">
+    <value>Adjustable rate mortgage</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_DoNotKnow" xml:space="preserve">
+    <value>I don’t know</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_BelowAverage" xml:space="preserve">
+    <value>Below average 580-619</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Average" xml:space="preserve">
+    <value>Average 620-659</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Good" xml:space="preserve">
+    <value>Good 660-719</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_AboveAverage" xml:space="preserve">
+    <value>Above average 720 +</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_SingleWoman" xml:space="preserve">
+    <value>Single Woman</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_SingleMan" xml:space="preserve">
+    <value>Single Man</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_JointTenants" xml:space="preserve">
+    <value>Joint Tenants</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Trust" xml:space="preserve">
+    <value>Trust</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DownPaymentBorrowed" xml:space="preserve">
+    <value>Is any part of your down payment borrowed?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_FileATaxExtension" xml:space="preserve">
+    <value>Did you file a tax extension for the most recent year?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_YearsOfSchool" xml:space="preserve">
+    <value>How many years of school have you completed, including college?</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_LessThan12" xml:space="preserve">
+    <value>&lt;12</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_BlankOption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AnswerDefinition_PromptText_13" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_14" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_15" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_16" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_17" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_18" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_19" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_20" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_GreaterThan20" xml:space="preserve">
+    <value>Greater than 20</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_RecommendAgent" xml:space="preserve">
+    <value>Would you like us to recommend you an agent?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_EstimatedPurchasePrice" xml:space="preserve">
+    <value>What is your estimated purchase price?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_CurrentHouseholdIncome" xml:space="preserve">
+    <value>What is your current household income?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DurationInCurrentProfession" xml:space="preserve">
+    <value>How many years have you been in your current profession?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_NumberOfDependents" xml:space="preserve">
+    <value>How many dependents do you have?</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_3" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_5" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_6" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_7" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_8" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_9" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_10" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Question_DisplayName_Month" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="Question_DisplayName_Year" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_ClosingDate" xml:space="preserve">
+    <value>What is the closing date of your current home?</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_April" xml:space="preserve">
+    <value>April</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Augst" xml:space="preserve">
+    <value>August</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_December" xml:space="preserve">
+    <value>December</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_February" xml:space="preserve">
+    <value>February</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_January" xml:space="preserve">
+    <value>January</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_July" xml:space="preserve">
+    <value>July</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_June" xml:space="preserve">
+    <value>June</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_March" xml:space="preserve">
+    <value>March</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_May" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_November" xml:space="preserve">
+    <value>November</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_October" xml:space="preserve">
+    <value>October</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_September" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="PossibleAnswer_PromptText_States" xml:space="preserve">
+    <value> |Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|Florida|Georgia|Hawaii|Idaho|Illinois|Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|Montana|Nebraska|Nevada|New Hampshire|New Jersey|New Mexico|New York|North Carolina|North Dakota|Ohio|Oklahoma|Oregon|Pennsylvania|Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|West Virginia|Wisconsin|Wyoming</value>
+  </data>
+  <data name="Question_DisplayName_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Question_DisplayName_State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Question_DisplayName_Street" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="Question_DisplayName_Zip" xml:space="preserve">
+    <value>Zip code</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_PreviousAddress" xml:space="preserve">
+    <value>Where did you live before?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_AgentInfo" xml:space="preserve">
+    <value>Please provide your agent's contact information</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_EmployerInfo" xml:space="preserve">
+    <value>Please provide your employer's contact information</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_RecentDebtDetails" xml:space="preserve">
+    <value>Please provide additional recent debt details</value>
+  </data>
+  <data name="Question_DisplayName_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Question_DisplayName_AmountOwed" xml:space="preserve">
+    <value>Amount owed</value>
+  </data>
+  <data name="Question_DisplayName_ContactName" xml:space="preserve">
+    <value>Contact Name</value>
+  </data>
+  <data name="Question_DisplayName_Debtor" xml:space="preserve">
+    <value>Debtor name</value>
+  </data>
+  <data name="Question_DisplayName_EmailAddress" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="Question_DisplayName_EmployerName" xml:space="preserve">
+    <value>Employer Name</value>
+  </data>
+  <data name="Question_DisplayName_MonthlyPayment" xml:space="preserve">
+    <value>Monthly payment</value>
+  </data>
+  <data name="Question_DisplayName_PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="Question_DisplayName_PositionTitle" xml:space="preserve">
+    <value>Position Title</value>
+  </data>
+  <data name="Question_DisplayName_StartMonth" xml:space="preserve">
+    <value>Start Month</value>
+  </data>
+  <data name="Question_DisplayName_StartYear" xml:space="preserve">
+    <value>Start Year</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_AddressOfProperty" xml:space="preserve">
+    <value>Address of property</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_AddressOfTheSoldProperty" xml:space="preserve">
+    <value>What was the address of the property that was sold?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_Alimony" xml:space="preserve">
+    <value>Do you receive alimony?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_AmountOfRent" xml:space="preserve">
+    <value>How much is your current monthly rent?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_BusinessTaxExtension" xml:space="preserve">
+    <value>Has the business filed an extension for this past year's tax return?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_CurrentAddress" xml:space="preserve">
+    <value>What is your current address?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DateOfPropertyForeclosed" xml:space="preserve">
+    <value>When was the property foreclosed on?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DateOfPropertyPurchase" xml:space="preserve">
+    <value>When did you purchase the property?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DateOfSale" xml:space="preserve">
+    <value>What was the date of sale?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DurationAtCurrentRental" xml:space="preserve">
+    <value>How long have you lived there?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DurationAtPreviousAddress" xml:space="preserve">
+    <value>How long did you live at this address?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DurationAtPreviousRental" xml:space="preserve">
+    <value>How long did you live at this address?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DurationOfAlimony" xml:space="preserve">
+    <value>How long is alimony expected to continue?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DurationOfAlimonyObligation" xml:space="preserve">
+    <value>How long are you expected to pay alimony?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DurationOfChildSupport" xml:space="preserve">
+    <value>How long is child support expected to continue?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DurationOfChildSupportObligation" xml:space="preserve">
+    <value>How long are you obligated to pay?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DurationOfSelfEmployement" xml:space="preserve">
+    <value>How long have you been self-employed?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_OtherBusinessInterests" xml:space="preserve">
+    <value>Do you also have any other business interests?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_OtherW2Jobs" xml:space="preserve">
+    <value>Do you have any other W-2 jobs?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_OwnMoreThan25Percent" xml:space="preserve">
+    <value>Do you own more than 25% of the partnership?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_PercentOfBusinessOwnership" xml:space="preserve">
+    <value>What percent of the business do you own?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_PreviousAddress1" xml:space="preserve">
+    <value>Where did you live before this?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_PreviousAddress2" xml:space="preserve">
+    <value>Where did you live before this?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_TimeOfWorkingOvertime" xml:space="preserve">
+    <value>How long have you been working overtime at current job?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_TypeOfBusiness" xml:space="preserve">
+    <value>What type of business is it?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_WhenBuyHome" xml:space="preserve">
+    <value>When did you buy this home?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_YearOfBankruptcyDischarge" xml:space="preserve">
+    <value>Year of bankruptcy discharge?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DateOfShortSale" xml:space="preserve">
+    <value>When did the short sale occur?</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_Corporation" xml:space="preserve">
+    <value>Corporation</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_IndependentContractor" xml:space="preserve">
+    <value>Independent Contractor/1099 Employee</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_Partnership" xml:space="preserve">
+    <value>Partnership/LLC</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_ScheduleC" xml:space="preserve">
+    <value>Schedule C/Sole Proprietor</value>
+  </data>
+  <data name="AnswerDefinition_PromptText_SCorporation" xml:space="preserve">
+    <value>S-Corporation</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_CurrentHomePlan" xml:space="preserve">
+    <value>What is your plan with your current home?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_OwnMonthlyPayment" xml:space="preserve">
+    <value>What is your total monthly payment including taxes, insurance and HOA fees (if applicable)?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_SoldBeforePurchase" xml:space="preserve">
+    <value>Will your current home be sold before you purchase?</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_2Unit" xml:space="preserve">
+    <value>2 unit (duplex)</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_3Unit" xml:space="preserve">
+    <value>3 unit</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_4Unit" xml:space="preserve">
+    <value>4 unit</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Child" xml:space="preserve">
+    <value>Child</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_CommercialProperty" xml:space="preserve">
+    <value>Commercial property</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_CondoTownhouseCondex" xml:space="preserve">
+    <value>Condo/Townhouse/Condex</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_HomeUnderAgreement" xml:space="preserve">
+    <value>Our home is currently under agreement</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_HousingQuartersAllowance" xml:space="preserve">
+    <value>Housing/Quarters allowance</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_InvestmentProperty" xml:space="preserve">
+    <value>Investment property</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Jointly" xml:space="preserve">
+    <value>Jointly</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Lot" xml:space="preserve">
+    <value>Lot</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_MilitaryBasePay" xml:space="preserve">
+    <value>Military base pay</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_MilitaryDuty" xml:space="preserve">
+    <value>Military Duty</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_MoveToNewHomeThenDecideWhatToDoWithOld" xml:space="preserve">
+    <value>We/I are going to move into new home then figure out what we want to do with it</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Parent" xml:space="preserve">
+    <value>Parent</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_PlanToPutToMarket" xml:space="preserve">
+    <value>We/I plan to put it on the market soon</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_PrimaryResidence" xml:space="preserve">
+    <value>Primary residence</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Relative" xml:space="preserve">
+    <value>Relative</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_RentCurrentAndMoveToNewHome" xml:space="preserve">
+    <value>We/I plan to rent current home and move into new home</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_ReserveIncome" xml:space="preserve">
+    <value>Reserve income</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_ReservesNationalGuard" xml:space="preserve">
+    <value>Reserves/National Guard</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_SecondHome" xml:space="preserve">
+    <value>Second home</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_SellingCurrentHomeSameTime" xml:space="preserve">
+    <value>Moving and selling current home at or about the same time</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Sibling" xml:space="preserve">
+    <value>Sibling</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Single" xml:space="preserve">
+    <value>Single</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_SingleFamily" xml:space="preserve">
+    <value>Single family</value>
+  </data>
+  <data name="PossibleAnswers_PromptText_Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_AmountOfGift" xml:space="preserve">
+    <value>Amount of Gift?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_AuthorizeCreditReportName" xml:space="preserve">
+    <value>Please type your name here</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DownpaymentCheckingOrSavingsAccount" xml:space="preserve">
+    <value>Will any part of your downpayment come from your checking or savings account?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DownpaymentEquityFromPendingSale" xml:space="preserve">
+    <value>Will any part of your downpayment come from equity from pending sale?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DownpaymentGift" xml:space="preserve">
+    <value>Will any part of your downpayment come from a gift?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DownpaymentRetirement401KLoanOrWithdrawal" xml:space="preserve">
+    <value>Will any part of your downpayment come from your Retirement or 401K loan or withdrawal?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_DownpaymentSaleOfStockOrBonds" xml:space="preserve">
+    <value>Will any part of your downpayment come from Sale of Stock or Bonds?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_ExperienceOfInvestmentProperties" xml:space="preserve">
+    <value>Do you have experience owning investment properties?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_HoldTitle" xml:space="preserve">
+    <value>How did you hold the title?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_ListedAsPermanentlyDisabled" xml:space="preserve">
+    <value>Are you listed as permanently disabled?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_MilitaryBenefits" xml:space="preserve">
+    <value>Do you receive any of these military benefits?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_MilitaryBranch" xml:space="preserve">
+    <value>Which branch of the military?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_NumberOfChildDependents" xml:space="preserve">
+    <value>Enter number of dependents</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_OneOrMoreParentChildSupport" xml:space="preserve">
+    <value>Do you pay more than one parent?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_OtherSourcesForDownpayment" xml:space="preserve">
+    <value>Are there any other sources for your downpayment that we didn't ask you about?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_PaymentPlan" xml:space="preserve">
+    <value>Are you on a payment plan?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_PercentDisabled" xml:space="preserve">
+    <value>Are you 10% or more disabled?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_PermanentResident" xml:space="preserve">
+    <value>Are you a Permanent Resident?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_PreviousUseOfVaEntitlement" xml:space="preserve">
+    <value>Have you used your VA Entitlement before?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_ReceivedGift" xml:space="preserve">
+    <value>Has the gift already been received?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_RelationshipOfDonor" xml:space="preserve">
+    <value>Relationship of donor?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_RequestedTheFunds" xml:space="preserve">
+    <value>Have you already requested the funds?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_TypeOfOwnershipPropety" xml:space="preserve">
+    <value>What type of property was it?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_TypeOfProperty" xml:space="preserve">
+    <value>What type of property (you will enter properties one at a time)</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_WorkVisa" xml:space="preserve">
+    <value>Do you have a Work Visa?</value>
+  </data>
+  <data name="QuestionDefinition_PromptText_ReceiveChildSupport" xml:space="preserve">
+    <value>Do you receive child support?</value>
+  </data>
+</root>

@@ -1,0 +1,22 @@
+﻿@using MySMA.Models
+@model MySMA.Models.EmployerQuestion
+
+@{
+    var questionDefinition = ViewBag.questionDefinition as EmployerQuestionDefinition;
+}
+
+@Html.DisplayNameFor(model => model.EmployerNameValue)
+@Html.EditorFor(model => model.EmployerNameValue, new { htmlAttributes = new { @class = "form-control" } })
+<br>
+@Html.DisplayNameFor(model => model.PositionTitleValue)
+@Html.EditorFor(model => model.PositionTitleValue, new { htmlAttributes = new { @class = "form-control" } })
+<br>
+@Html.DisplayNameFor(model => model.AddressValue)
+@Html.EditorFor(model => model.AddressValue, new { htmlAttributes = new { @class = "form-control" } })
+<br>
+@Html.DisplayNameFor(model => model.MonthValue)
+@Html.DropDownListFor(m => m.MonthValue, new SelectList(questionDefinition.MonthList, "AnswerId", "PromptText"), new { data_val = false, @class = "form-control" })
+<br>
+@Html.DisplayNameFor(model => model.YearValue)
+@Html.DropDownListFor(m => m.YearValue, new SelectList(questionDefinition.YearList), new { data_val = false, @class = "form-control" })
+<br>

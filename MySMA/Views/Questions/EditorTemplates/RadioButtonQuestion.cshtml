@@ -1,0 +1,15 @@
+﻿@using MySMA.Models
+@model MySMA.Models.RadioButtonQuestion
+    @{
+        var questionDefinition = ViewBag.questionDefinition as RadioButtonQuestionDefinition;
+    }
+    <ul class="list-unstyled">
+        @foreach (var possibleAnswer in questionDefinition.PossibleAnswers)
+        {
+            <li>
+                <label>@Html.RadioButtonFor(m => m.SelectedAnswer, possibleAnswer.AnswerId, new { data_val = false }) @possibleAnswer.PromptText</label>
+            </li>
+        }
+    </ul>
+
+@Html.ValidationMessageFor(model => model.SelectedAnswer, "", new { @class = "text-danger" })

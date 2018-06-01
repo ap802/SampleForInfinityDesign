@@ -1,0 +1,46 @@
+﻿@model IEnumerable<MySMA.Models.Questionnaire>
+
+@{
+    ViewBag.Title = "Questionnaires";
+}
+
+<h2>Questionnaires</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BorrowerFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BorrowerLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BorrowerEmail)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.BorrowerFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BorrowerLastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BorrowerEmail)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id }) |
+            @Html.ActionLink("Edit Questions", "Edit", "Questions", new { questionnaireId = item.Id}, null )
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,23 @@
+﻿@model MySMA.Models.Questionnaire
+
+@{
+    ViewBag.Title = "Edit Questionnaire";
+}
+
+<h2>Edit Questionnaire</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    @Html.Partial("_CreateOrEdit", Model)
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

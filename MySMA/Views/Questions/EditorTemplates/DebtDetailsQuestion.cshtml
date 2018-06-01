@@ -1,0 +1,15 @@
+﻿@using MySMA.Models
+@model MySMA.Models.DebtDetailsQuestion
+@{
+    var questionDefinition = ViewBag.questionDefinition as DebtDetailsQuestionDefinition;
+}
+
+@Html.DisplayNameFor(model => model.DebtorValue)
+@Html.EditorFor(model => model.DebtorValue, new { htmlAttributes = new { @class = "form-control" } })
+<br>
+@Html.DisplayNameFor(model => model.AmountOwedValue)
+@Html.EditorFor(model => model.AmountOwedValue, new { htmlAttributes = new { @class = "form-control", @placeholder = "0"  } })
+<br>
+@Html.DisplayNameFor(model => model.MonthlyPaymentValue)
+@Html.EditorFor(model => model.MonthlyPaymentValue, new { htmlAttributes = new { @class = "form-control", @placeholder = "0" } })
+<br>

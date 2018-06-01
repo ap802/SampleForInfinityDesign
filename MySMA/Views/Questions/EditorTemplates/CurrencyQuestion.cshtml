@@ -1,0 +1,7 @@
+﻿@model MySMA.Models.CurrencyQuestion
+<div class="input-group">
+    <span class="input-group-addon">$</span>
+    @Html.EditorFor(model => model.CurrencyValue, "", new { htmlAttributes = new { @class = "form-control", @placeholder = "0" } })
+</div>
+
+@Html.ValidationMessageFor(model => model.CurrencyValue, "", new { @class = "text-danger" })

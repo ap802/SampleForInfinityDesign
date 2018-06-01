@@ -1,0 +1,17 @@
+﻿@using MySMA.Models
+@model MySMA.Models.AddressQuestion
+@{
+    var questionDefinition = ViewBag.questionDefinition as AddressQuestionDefinition;
+}
+@Html.DisplayNameFor(model => model.StreetValue)
+@Html.EditorFor(model => model.StreetValue, new { htmlAttributes = new { @class = "form-control" } })
+<br>
+@Html.DisplayNameFor(model => model.CityValue)
+@Html.EditorFor(model => model.CityValue, new { htmlAttributes = new { @class = "form-control" } })
+<br>
+@Html.DisplayNameFor(model => model.StateValue)
+@Html.DropDownListFor(model => model.StateValue, new SelectList(questionDefinition.StateList), new { data_val = false, @class = "form-control" })
+<br>
+@Html.DisplayNameFor(model => model.ZipValue)
+@Html.EditorFor(model => model.ZipValue, new { htmlAttributes = new { @class = "form-control" } })
+

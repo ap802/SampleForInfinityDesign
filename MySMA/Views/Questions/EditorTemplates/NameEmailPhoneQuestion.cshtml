@@ -1,0 +1,17 @@
+﻿@using MySMA.Models
+@model MySMA.Models.NameEmailPhoneQuestion
+
+@{
+    var questionDefinition = ViewBag.questionDefinition as AddressQuestionDefinition;
+}
+
+@Html.DisplayNameFor(model => model.NameValue)
+@Html.EditorFor(model => model.NameValue, new { htmlAttributes = new { @class = "form-control" } })
+<br>
+@Html.DisplayNameFor(model => model.EmailValue)
+@Html.EditorFor(model => model.EmailValue, new { htmlAttributes = new { @class = "form-control" } })
+<br>
+@Html.DisplayNameFor(model => model.PhoneValue)
+@Html.EditorFor(model => model.PhoneValue, new { htmlAttributes = new { @class = "form-control" } })
+
+

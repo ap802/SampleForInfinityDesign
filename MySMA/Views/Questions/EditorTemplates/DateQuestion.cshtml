@@ -1,0 +1,25 @@
+﻿@using MySMA.Extensions
+@model MySMA.Models.DateQuestion
+@{ var displayDate = Model.DateValue.HasValue ? Model.DateValue.Value.ToString("MM/dd/yyyy") : ""; }
+
+<div id="DateDropdowns" class="form-inline">
+    @Html.ValidationMessageFor(model => model.DateValue, "", new {@class = "text-danger"})
+</div>
+
+@Html.Script(@<script>
+    // Note: This function will locate the DateDropdown divs and spawn the dropdown controls.
+    // That's why there is no EditorFor or HiddenFor referencing DateValue, above.
+                  $(function() {
+                      $("#DateDropdowns").dateDropdowns({
+                          minAge: 18,
+                          displayFormat: "mdy",
+                          dropdownClass: "form-control",
+                          daySuffixes: false,
+                          submitFieldName: "DateValue",
+                          submitFormat: "mm/dd/yyyy",
+                          defaultDate: '@displayDate',
+                          defaultDateFormat: "mm/dd/yyyy"
+                      });
+                  });
+    </script>)
+
